@@ -42,7 +42,8 @@ public class Aluno {
     }
     
     public String mostraDados(){
-        
+        return nome + " - " + sexo + " - " + altura + " - " + peso 
+                + " - " + imc;
     }
     
     
