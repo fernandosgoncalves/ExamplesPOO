@@ -32,5 +32,11 @@ public class ExecutaAluno {
                showInputDialog("Informe o peso:")));
        a2.setSexo(JOptionPane.
                showInputDialog("Informe o Sexo F/M:").charAt(0) );
+       
+       a1.calculaImc();
+       a2.calculaImc();
+       
+       System.out.println(a1.mostraDados());
+       System.out.println(a2.mostraDados());
     }
 }
