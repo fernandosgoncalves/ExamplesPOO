@@ -37,6 +37,9 @@ public class ExemploModficadorAcesso {
         p.calculaSubtotal();
         
         System.out.println(p.toString());
+        
+        System.out.println("Soma de 5 e 7: " + 
+                Produto.soma(5, 7));
     }
     
 }

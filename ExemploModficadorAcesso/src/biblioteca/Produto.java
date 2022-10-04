@@ -42,6 +42,10 @@ public class Produto {
                 subtotal + '}';
     }
     
+    public static float soma(float a, float b){
+        return a+b;
+    }
+    
     
     
 }
