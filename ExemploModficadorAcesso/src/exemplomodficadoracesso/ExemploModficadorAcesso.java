@@ -5,6 +5,8 @@
  */
 package exemplomodficadoracesso;
 
+import biblioteca.Livro;
+
 /**
  *
  * @author professor
@@ -15,7 +17,13 @@ public class ExemploModficadorAcesso {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Livro l = new Livro();
+        
+        l.titulo = "Java com POO";
+        l.setAno(2021);
+        l.setAutor("Augusto Cury");
+        
+        System.out.println(l.toString());
     }
     
 }
