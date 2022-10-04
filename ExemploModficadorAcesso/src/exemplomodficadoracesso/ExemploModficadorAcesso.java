@@ -6,6 +6,7 @@
 package exemplomodficadoracesso;
 
 import biblioteca.Livro;
+import biblioteca.Produto;
 
 /**
  *
@@ -18,12 +19,24 @@ public class ExemploModficadorAcesso {
      */
     public static void main(String[] args) {
         Livro l = new Livro();
-        
+                
         l.titulo = "Java com POO";
         l.setAno(2021);
         l.setAutor("Augusto Cury");
         
         System.out.println(l.toString());
+        
+        Livro.imprimir();
+        
+        //Exemplo Metodo sem retorno Produto
+        Produto p = new Produto();
+        
+        p.setSaldo((float) 8.5);
+        p.setV_unit((float) 10.45);
+        
+        p.calculaSubtotal();
+        
+        System.out.println(p.toString());
     }
     
 }

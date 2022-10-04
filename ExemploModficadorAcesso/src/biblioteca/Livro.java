@@ -33,5 +33,9 @@ public class Livro {
                 + " Titulo: " + this.titulo;
     }
     
+    public static void imprimir(){
+        System.out.println("Teste de metodo sem retorno");
+    }
+    
     
 }
