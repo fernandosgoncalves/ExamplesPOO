@@ -46,6 +46,19 @@ public class Produto {
         return a+b;
     }
     
+    public String getDescricao(){
+        return this.descricao;
+    }
     
-    
+    public float realizaVenda(float quantidade){
+        if(this.Saldo <= quantidade){
+            System.out.println("Saldo insuficiente!");
+            return -1;
+        }else{
+            System.out.println("Venda Realizada!");
+            this.Saldo -= quantidade;
+            calculaSubtotal();
+            return Saldo;
+        }
+    } 
 }

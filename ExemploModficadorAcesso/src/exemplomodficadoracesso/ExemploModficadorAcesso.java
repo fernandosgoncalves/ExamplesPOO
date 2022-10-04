@@ -40,6 +40,11 @@ public class ExemploModficadorAcesso {
         
         System.out.println("Soma de 5 e 7: " + 
                 Produto.soma(5, 7));
+        
+        System.out.println(p.getDescricao());
+        System.out.println(p.realizaVenda((float)5.5));
+        p.realizaVenda(10);
+        System.out.println(p.toString());
     }
     
 }
