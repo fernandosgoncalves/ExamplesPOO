@@ -21,7 +21,7 @@ public class ExemploMetodosOutrasClasses {
         
         System.out.println(UsoMetodos.diaSemana(3));
         
-        System.out.println(UsoMetodos.lerNumeroFloat(0, 10));
+        System.out.println(UsoMetodos.lerNumeroFloat(0, 33));
         
         System.out.println(UsoMetodos.calculaMedia(10, (float)5.5, (float)8.33));
     }   
