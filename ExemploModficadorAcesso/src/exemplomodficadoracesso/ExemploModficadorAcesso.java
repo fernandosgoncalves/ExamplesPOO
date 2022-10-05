@@ -45,6 +45,12 @@ public class ExemploModficadorAcesso {
         System.out.println(p.realizaVenda((float)5.5));
         p.realizaVenda(10);
         System.out.println(p.toString());
+        
+        p.reajustaSaldo(15);
+        System.out.println(p.toString());
+        p.reajustaSaldo(25, (float)89.50);
+        System.out.println(p.toString());
+        
     }
     
 }

@@ -61,4 +61,13 @@ public class Produto {
             return Saldo;
         }
     } 
+    
+    public void reajustaSaldo(float percentual){
+        this.Saldo = this.Saldo * (1+(percentual/100));
+    }
+    
+    public void reajustaSaldo(float saldo, float valor){
+        this.Saldo = saldo;
+        this.v_unit = valor;
+    }
 }
