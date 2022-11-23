@@ -179,4 +179,11 @@ public class Lista {
         return 0;
     }
     
+    public void multiplicaArrays(){
+        for(int i=0; i<15; i++){
+            c[i] = a[i] * b[i];
+        }
+        mostraDados(2);
+    }
+    
 }

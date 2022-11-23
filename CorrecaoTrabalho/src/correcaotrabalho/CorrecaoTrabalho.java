@@ -34,6 +34,9 @@ public class CorrecaoTrabalho {
         
         
         System.out.println("Total Iguais: " + l.totalIguais(0, 1));
+        
+        System.out.println("Multiplica Arrays");
+        l.multiplicaArrays();
     }
     
 }

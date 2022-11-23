@@ -20,6 +20,19 @@ public class Heranca {
         System.out.println(c.getClass());
         System.out.println(c.getClass().getSimpleName());
         System.out.println(c.hashCode());
+        
+        // Classe PESSOA
+        
+        PessoaFisica pf = new PessoaFisica("123.456.789-00", "Teste Pessoa Fisica");
+        PessoaJuridica pj = new PessoaJuridica("123456789", "Empresa teste");
+        Funcionario f = new Funcionario(1500, 123, "12345678900", "João");
+        
+        System.out.println(f.getNome());
+        System.out.println(f.getCpf());
+        
+        System.out.println(pj.toString());
+        
+        System.out.println(pf.getCpf());
     }
     
 }
