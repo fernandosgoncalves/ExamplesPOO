@@ -20,8 +20,27 @@ public class FormaGeometrica {
         this.lados = new int[2];
     }
 
-    public int getTipo() {
-        return tipo;
+    public void getTipo() {
+        switch(this.tipo){
+            case 0:
+                //Quadrado
+                System.out.println("É um quadrado");
+                System.out.println("Número de lados 1");
+            break;
+            case 1:
+                //Retangulo
+                System.out.println("É um retângulo");
+                System.out.println("Número de lados 2");
+            break;
+            case 2:
+                //Triangulo
+                System.out.println("É um Triângulo");
+            break;
+            case 3:
+                //Circulo
+                System.out.println("É um circulo");
+            break;
+        }
     }
 
     public void setTipo(int tipo) {
@@ -76,11 +95,27 @@ public class FormaGeometrica {
         return area;
     }
     
-    /*public int getPerimetro(){
+    public float getPerimetro(){
+        float perimetro = 0;
+        switch(this.tipo){
+            case 0:
+                //Quadrado
+                perimetro = this.lados[0] + this.lados[0] + this.lados[0] + this.lados[0];
+            break;
+            case 1:
+                //Retangulo
+                perimetro = this.lados[0] + this.lados[1] + this.lados[0] + this.lados[1];
+            break;
+            case 2:
+                //Triangulo
+                perimetro = this.lados[0] * 3;
+            break;
+            case 3:
+                //Circulo
+                perimetro = (float) (2 * 3.14 * this.raio); 
+            break;
+        }
         
+        return perimetro;
     }
-    
-    public int getNLados(){
-        
-    }*/
 }

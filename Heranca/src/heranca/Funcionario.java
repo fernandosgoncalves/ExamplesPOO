@@ -37,6 +37,11 @@ public class Funcionario extends PessoaFisica {
     public void setMatricula(int matricula) {
         this.matricula = matricula;
     }
+
+    @Override
+    public String toString() {
+        return "Funcionario{" + "salario=" + salario + ", matricula=" + matricula + ", nome=" + super.getNome() + ", cpf=" + super.getCpf() + '}';
+    }
     
     
     
